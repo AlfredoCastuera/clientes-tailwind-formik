@@ -1,3 +1,28 @@
 {
-  "clientes": []
+  "clientes": [
+    {
+      "nombre": "freddy",
+      "empresa": "tres banderas cafe",
+      "email": "freddycastuera@gmail.com",
+      "telefono": "3271065261",
+      "notas": "le gusta beber cafe",
+      "id": 1
+    },
+    {
+      "nombre": "juan luis guerra",
+      "empresa": "pastillas para dormir",
+      "email": "juanluis@gmail.com",
+      "telefono": "345 232 23 23",
+      "notas": "se le sube la bilirrubina",
+      "id": 2
+    },
+    {
+      "nombre": "jose",
+      "empresa": "tortas jose",
+      "email": "jose@gmail.com",
+      "telefono": "234 343 23 23",
+      "notas": "le gusta hacer tortas\n\n",
+      "id": 3
+    }
+  ]
 }

@@ -1,5 +1,6 @@
 import axios  from 'axios'
-const getAllClientes = async (url="http://localhost:4000/clientes" ) => {
+const baseUrl = import.meta.env.VITE_BASEURL_DEVELOPMENT
+const getAllClientes = async (url=baseUrl) => {
     try{
         const { data } = await axios.get(url)
         return data
@@ -7,7 +8,7 @@ const getAllClientes = async (url="http://localhost:4000/clientes" ) => {
         return err
     }
 }
-const createCliente = async (body,url="http://localhost:4000/clientes") => {
+const createCliente = async (body,url=baseUrl) => {
     try{
         const response = await axios.post(url,body)
         console.log(response)
@@ -16,7 +17,7 @@ const createCliente = async (body,url="http://localhost:4000/clientes") => {
         return err
     }
 }
-const getClienteById = async(id,url="http://localhost:4000/clientes") => {
+const getClienteById = async(id,url=baseUrl) => {
     try{
         const response = await axios.get(`${url}/${id}`)
         return response
@@ -24,7 +25,7 @@ const getClienteById = async(id,url="http://localhost:4000/clientes") => {
         return err
     }
 }
-const updateCliente = async(id,body,url="http://localhost:4000/clientes") => {
+const updateCliente = async(id,body,url=baseUrl) => {
     try{
         const response = await axios.put(`${url}/${id}`,body)
         return response
@@ -32,7 +33,7 @@ const updateCliente = async(id,body,url="http://localhost:4000/clientes") => {
         return err
     }
 }
-const deleteCliente = async(id,url="http://localhost:4000/clientes") => {
+const deleteCliente = async(id,url=baseUrl) => {
     try{
         const response = await axios.delete(`${url}/${id}`)
         return response

@@ -15,11 +15,11 @@ const {nombre,email,telefono,empresa,notas,id} = cliente
     <td className="p-3 ">
         <button 
             className='transition ease-in-out duration-300 w-full  p-2  mb-3 text-sm uppercase text-white font-bold bg-green-600 hover:bg-green-700 hover:scale-110  rounded'
-            onClick={()=>{navigate(`/clientes/${id}`)}}
+            onClick={()=>{navigate(`/${id}`)}}
             >Ver</button>
         <button 
             className='transition ease-in-out duration-300 w-full p-2 mb-3 text-sm uppercase text-white font-bold bg-blue-600 hover:bg-blue-700 hover:scale-110  rounded'
-            onClick={()=>{navigate(`/clientes/editar/${id}`)}}
+            onClick={()=>{navigate(`/editar/${id}`)}}
             >Editar</button>
         <button  
             className='transition ease-in-out duration-300 w-full p-2 text-sm uppercase text-white font-bold bg-red-600 hover:bg-red-700 hover:scale-110  rounded'

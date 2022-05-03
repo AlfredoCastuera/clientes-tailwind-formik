@@ -39,7 +39,7 @@ const Formulario = ({cliente}) => {
           }
           //console.log(response)
           resetForm()
-          navigate("/clientes")
+          navigate("/")
         }}
       >
         {({errors,touched})=> (

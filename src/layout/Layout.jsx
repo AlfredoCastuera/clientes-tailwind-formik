@@ -10,10 +10,10 @@ const Layout = () => {
             <nav className='mt-10'>
                 <Link 
                 className={`transition-all ease-in-out hover:scale-110 text-2xl block mt-2 ${pathname==='/clientes'? 'text-blue-400': 'text-white'} hover:text-blue-400`}
-                to="/clientes">Clientes</Link>
+                to="/">Clientes</Link>
                 <Link 
                 className={`transition-all ease-in-out hover:scale-110 text-2xl block mt-2  ${pathname==='/clientes/nuevo'? 'text-blue-400': 'text-white'} hover:text-blue-400`}
-                to="/clientes/nuevo">Nuevo</Link>
+                to="/nuevo">Nuevo</Link>
             </nav>
         </div>
         <div className='md:w-3/4 p-10 md:h-screen overflow-scroll'><Outlet /></div>
