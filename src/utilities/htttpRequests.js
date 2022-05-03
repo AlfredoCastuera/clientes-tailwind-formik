@@ -1,5 +1,5 @@
 import axios  from 'axios'
-const baseUrl = import.meta.env.VITE_BASEURL_DEVELOPMENT
+const baseUrl = import.meta.env.VITE_BASEURL_PRODUCTION
 const getAllClientes = async (url=baseUrl) => {
     try{
         const { data } = await axios.get(url)
